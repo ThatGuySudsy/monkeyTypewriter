@@ -7,6 +7,8 @@ toPrint = ""
 sentences = 0
 cN = 0
 
+if input("Turn quiet mode on? (Doesn't print into console) Answer y/n  ").lower() == "y":
+    quiet = True
 target = input("What is your message?  ").lower()
 
 startTime = t.perf_counter()
@@ -17,7 +19,8 @@ while sentence != target:
     if character == ".":
         sentence = toPrint
         toPrint = ""
-        print(sentence)
+        if not quiet:
+            print(sentence)
         sentences += 1
     else:
         toPrint += character
