@@ -6,6 +6,7 @@ sentence = ""
 toPrint = ""
 sentences = 0
 cN = 0
+quiet = False
 
 if input("Turn quiet mode on? (Doesn't print into console) Answer y/n  ").lower() == "y":
     quiet = True
