@@ -31,3 +31,5 @@ mins, secs = divmod(elapsed, 60)
 
 print(f"Message recieved after {cN} characters ({sentences} sentences)")
 print(f"Took {int(mins)} minute(s) {secs:.2f} second(s)")
+print(f"You went through {cN/elapsed:.2f} characters ({sentences/elapsed:.2f} senences) every second")
+print(f"Average sentence length: {cN / sentences:.3f} characters")
